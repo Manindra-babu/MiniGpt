@@ -89,7 +89,7 @@ The `/v1/completions` endpoint mirrors OpenAI's API structure exactly, so you ca
 
 **cURL:**
 ```bash
-curl -X POST http://localhost:5000/v1/completions \
+curl -X POST https://mani-359-custom-llm.hf.space/v1/completions \
   -H "Authorization: Bearer sk-custom-llm-token" \
   -H "Content-Type: application/json" \
   -d '{
@@ -103,7 +103,7 @@ curl -X POST http://localhost:5000/v1/completions \
 import requests
 
 response = requests.post(
-    "http://localhost:5000/v1/completions",
+    "https://mani-359-custom-llm.hf.space/v1/completions",
     headers={
         "Authorization": "Bearer sk-custom-llm-token",
         "Content-Type": "application/json"
@@ -169,7 +169,7 @@ MiniGpt/
 
 Deployed on **Hugging Face Spaces** with Docker for free 24/7 hosting.
 
-Live demo: [huggingface.co/spaces/Manindra-babu/MiniGpt](https://huggingface.co/spaces/Manindra-babu/MiniGpt)
+Live demo: [huggingface.co/spaces/mani-359/Custom-LLM](https://huggingface.co/spaces/mani-359/Custom-LLM)
 
 ---
 
