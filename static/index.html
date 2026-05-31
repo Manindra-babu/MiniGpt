@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Chat | Custom GPT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-circle"></div>
+                <h1>Custom LLM</h1>
+            </div>
+            <div class="status-indicator">
+                <span class="pulse"></span> Online
+            </div>
+        </header>
+        
+        <main class="chat-container" id="chat-container">
+            <div class="message system">
+                <div class="message-content">
+                    Hello! How is your day, and how can I help you?
+                </div>
+            </div>
+            <!-- Chat messages will be injected here -->
+        </main>
+
+        <footer class="input-area">
+            <div class="suggestion-chips">
+                <button class="chip">The future of AI is</button>
+                <button class="chip">Once upon a time</button>
+                <button class="chip">In a distant galaxy</button>
+                <button class="chip">The secret to happiness is</button>
+            </div>
+            <div class="input-wrapper">
+                <textarea id="prompt-input" placeholder="Message your LLM..." rows="1"></textarea>
+                <button id="send-btn" class="send-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+flask
+torch
+tiktoken
+requests
+tqdm
+tensorflow-cpu
